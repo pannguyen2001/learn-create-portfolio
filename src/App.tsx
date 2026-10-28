@@ -1,48 +1,26 @@
-import './App.css'
-import logger from '@/utils/logger'
-import Navbar from '@/components/Navbar'
-import { useEffect, useState } from 'react'
-import { ThemeEnum } from '@/types/index'
-
+import About from "./sections/About";
+import Contact from "./sections/Contact";
+import Experience from "./sections/Experience";
+import Hero from "./sections/Hero";
+import Projects from "./sections/Projects";
+import Testimonials from "./sections/Testimonials";
+import Navbar from "./layouts/Navbar";
 
 function App() {
-  // Setup theme dark, light
-  // Source: https://www.youtube.com/watch?v=72-UZdWqDlk&list=PLY8SjtSzFw7RLwEwDsw7OrgqawSOdwCPb&index=22 
-  const [theme, setTheme] = useState(ThemeEnum.DARK)
-
-  const toggle = () => {
-    setTheme((t: ThemeEnum) => t === ThemeEnum.DARK ? ThemeEnum.LIGHT : ThemeEnum.DARK)
-  }
-  logger.info(`Current theme: ${theme}`)
-
-  useEffect(() => {
-    document.documentElement.setAttribute('data-theme', theme)
-  }, [theme])
-
 
   return (
-    <div
-      className={`App ${theme}`}
-      date-test='app-test'
-      data-theme={theme}
-    >
-      {/* ========== Navbar ============ */}
-      <Navbar
-        theme={theme}
-        toggle={toggle}
-      />
-
-      {/* ========== Content ============ */}
-      <div className="app-content">
-        <h1>App content</h1>
-      </div>
-
-      {/* =========== Footer ========== */}
-     
+    <div className="min-h-screen overflow-x-hidden">
+      <Navbar />
+      <main>
+          <Hero />
+          <About />
+          <Projects />
+          <Experience />
+          <Testimonials />
+          <Contact />
+      </main>
     </div>
   )
 }
 
 export default App
-
-//https://www.youtube.com/watch?v=JSFIGIA9Zrk&list=PLY8SjtSzFw7RLwEwDsw7OrgqawSOdwCPb&index=6

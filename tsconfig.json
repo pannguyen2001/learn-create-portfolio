@@ -20,12 +20,15 @@
       "@/configs/*": ["src/configs/*"],
       "@/data/*": ["src/data/*"],
       "@/helpers/*": ["src/helpers/*"],
-      "@/zustand/*": ["src/zustand/*"],
+      "@/layouts/*": ["src/layouts/*"],
       "@/pages/*": ["src/pages/*"],
-      "@/routes/*": ["src/routes/*"],
+      "@/routers/*": ["src/routers/*"],
+      "@/sections/*": ["src/sections/*"],
+      "@/services/*": ["src/services/*"],
       "@/tests/*": ["src/tests/*"],
       "@/types/*": ["src/types/*"],
-      "@/utils/*": ["src/utils/*"]
+      "@/utils/*": ["src/utils/*"],
+      "@/zustand/*": ["src/zustand/*"],
     }
   }
 }

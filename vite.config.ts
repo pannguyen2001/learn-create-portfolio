@@ -1,9 +1,10 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import * as path from 'path' // Import the path module: npm install --save-dev @types/node
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       '@/assets': path.resolve(__dirname, 'src/assets'),
@@ -11,12 +12,15 @@ export default defineConfig({
       '@/configs': path.resolve(__dirname, 'src/configs'),
       '@/data': path.resolve(__dirname, 'src/data'),
       '@/helpers': path.resolve(__dirname, 'src/helpers'),
-      '@/zustand': path.resolve(__dirname, 'src/zustand'),
+      '@/layouts': path.resolve(__dirname, 'src/layouts'),
       '@/pages': path.resolve(__dirname, 'src/pages'),
-      '@/routes': path.resolve(__dirname, 'src/routes'),
+      '@/routers': path.resolve(__dirname, 'src/routers'),
+      '@/sections': path.resolve(__dirname, 'src/sections'),
+      '@/services': path.resolve(__dirname, 'src/services'),
       '@/tests': path.resolve(__dirname, 'src/tests'),
       '@/types': path.resolve(__dirname, 'src/types'),
       '@/utils': path.resolve(__dirname, 'src/utils'),
+      '@/zustand': path.resolve(__dirname, 'src/zustand'),
     },
   },
 })
