@@ -87,7 +87,7 @@ export class Logger {
         return match ? match[1] : "Unknown"
     }
 
-    private log(level: LogLevel, message: Array<unknown> | Error | Object) {
+    private log(level: LogLevel, message: Array<unknown> | Error | object) {
         // const timestamp = new Date().toLocaleString("en-GB", { timeZone: "Asia/Ho_Chi_Minh" });
         if (!this.#isDebug) return console.log(message);
 
