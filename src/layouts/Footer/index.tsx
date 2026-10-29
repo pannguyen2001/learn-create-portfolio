@@ -1,5 +1,4 @@
 import { FaFacebook, FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa';
-import './Footer.css';
 
 type contactType = {
   icon: React.ComponentType<{ className?: string; }>,
