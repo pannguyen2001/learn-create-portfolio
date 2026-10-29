@@ -2,7 +2,7 @@ import { Code2, Lightbulb, Rocket, User } from "lucide-react";
 import React from "react";
 
 type highlightType = {
-    icon: React.ComponentType,
+    icon: React.ComponentType<{ className?: string }>,
     title: string,
     description: string
 }
@@ -89,7 +89,7 @@ const About = () => {
                             }}
                         >
                             <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center mb-4 hover:bg-primary/20">
-                                {<item.icon className="w-6 h-6 text-primary" />}
+                                <item.icon className="w-6 h-6 text-primary" />
                             </div>
                             <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
                             <p className="text-sm text-muted-foreground">{item.description}</p>
