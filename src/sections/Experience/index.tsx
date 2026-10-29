@@ -38,7 +38,7 @@ const experiences: Array<experienceType> = [
 ]
 
 const Experience = () => {
-    return (<section id="experience" className="py-32 relative overflow-hidden">
+    return (<section id="experience" className="py-20 relative overflow-hidden">
         {/* Green Dots */}
         <div>
             {[...Array(30)].map((_, i) => (
