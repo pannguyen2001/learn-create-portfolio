@@ -20,6 +20,7 @@ function App() {
         {/* <Testimonials /> */}
         <Contact />
       </main>
+      <hr className="border-t border-gray-600" />
       <Footer />
     </div>
   )
