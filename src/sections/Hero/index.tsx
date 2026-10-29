@@ -43,7 +43,7 @@ const ICONS = [
 
 const Hero = () => {
     const [dynamicWord, setDynamicWord] = useState("everything");
-    const words: Array<string> = ["frontend", "backend", "database", "automation", "everything"];
+    const words: Array<string> = ["frontend", "backend", "data", "automation", "everything"];
 
     useEffect(() => {
         const interval = setInterval(() => {
