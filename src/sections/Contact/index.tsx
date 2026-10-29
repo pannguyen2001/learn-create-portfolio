@@ -97,7 +97,7 @@ const Contact = () => {
         }
     }
 
-    return <section id="contact" className="py-32 relative overflow-hidden">
+    return <section id="contact" className="py-20 relative overflow-hidden">
         {/* Green Dots */}
         <div>
             {[...Array(30)].map((_, i) => (
