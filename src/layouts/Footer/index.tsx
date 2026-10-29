@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaLinkedin, FaMailBulk } from 'react-icons/fa';
 import './Footer.css';
 
 type contactType = {
-  icon: React.ComponentType,
+  icon: React.ComponentType<{ className?: string; }>,
   href: string
 }
 
