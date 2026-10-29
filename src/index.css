@@ -19,7 +19,7 @@
     --color-muted-foreground: #d2e9ff;
 
     --color-border: #242b32;
-    
+
     --radius: 0.75rem;
 
     --color-highlight: #f5a623;
@@ -29,6 +29,10 @@
 @layer base {
     html {
         scroll-behavior: smooth;
+    }
+
+    button {
+        cursor: pointer;
     }
 
     body {
@@ -63,16 +67,22 @@
     .glow-border {
         box-shadow: 0 0 30px color-mix(in srgb, var(--color-primary) 50%, transparent), inset 0 0 20px color-mix(in srgb, var(--color-primary) 15%, transparent);
     }
+
+    .footer {
+        background-color: #0a0a0a;
+        border-top: 1px solid #27272a;
+    }
 }
 
 @layer utilities {
-    
+
     @keyframes fade-in {
         from {
             opacity: 0;
             transform: translateY(20px);
             filter: blur(10px);
         }
+
         to {
             opacity: 1;
             transform: translateY(0);
@@ -81,15 +91,20 @@
     }
 
     @keyframes slow-drift {
-        0%, 100% {
+
+        0%,
+        100% {
             transform: translate(0, 0);
         }
+
         25% {
             transform: translate(20px, -30px);
         }
+
         50% {
             transform: translate(-15px, -20px);
         }
+
         75% {
             transform: translate(30px, 10px);
         }
@@ -99,6 +114,7 @@
         from {
             transform: translateX(0);
         }
+
         to {
             transform: translateX(-50%);
         }
@@ -144,6 +160,7 @@
         0% {
             stroke-dashoffset: 400;
         }
+
         100% {
             stroke-dashoffset: -550;
         }
@@ -157,5 +174,9 @@
         background-color: color-mix(in srgb, var(----color-primary) 15%, transparent);
         backdrop-filter: blur(16px);
         box-shadow: 0 0 20px color-mix(in srgb, var(--color-primary) 20%, transparent);
+    }
+
+    .timeline-glow {
+        box-shadow: 0 0 40px color-mix(in srgb, var(--color-primary) 35%, transparent), 0 0 80px color-mix(in srgb, var(--color-primary) 25%, transparent);
     }
 }
