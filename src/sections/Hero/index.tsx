@@ -99,7 +99,7 @@ const Hero = () => {
                     {/* Headline */}
                     <div className="space-y-4">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">
-                            Ensure <span className="text-primary glow-text">{dynamicWord}</span>
+                            Ensure <span className="text-primary glow-text">everything</span>
                             <br />
                             <span className="block">working</span>
                             <span className="font-serif italic font-normal text-white block">
