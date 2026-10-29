@@ -23,3 +23,8 @@ dist-ssr
 *.sln
 *.sw?
 package-lock.json
+.gitignore
+skills-lock.json
+.agents
+.vscode
+.env

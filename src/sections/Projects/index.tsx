@@ -70,7 +70,7 @@ const Projects = () => {
 
         <div className="absolute bottom-1/4 left-0 w-64 h-64 bg-highlight/5 rounded-full blur-3xl -z-10"></div>
 
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
             {/* Section header */}
             <div className="text-center mx-auto max-w-3xl mb-16">
                 <span className="text-secondary-foreground text-sm font-medium tracking-wider uppercase animate-fade-in">
@@ -106,7 +106,7 @@ const Projects = () => {
                                     alt={project.title}
                                     className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent">
+                                <div className="absolute inset-0 bg-gradient-to-t from-card via-card/50 to-transparent flex flex-col justify-end">
                                     {/* Overlay link */}
                                     <div className="absolute inset-0 flex items-center justify-center gap-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                         <a href={project.github} className="p-3 rounded-full glass hover:bg-primary hover:text-primary-foreground transition-all">
@@ -115,21 +115,18 @@ const Projects = () => {
                                     </div>
 
                                     {/* Content */}
-                                    <div className="p-6 flex flex-col justify-between h-full">
-                                        <div>
-                                            <div className="flex items-start justify-between">
-                                                <h3 className="text-xl font-semibold
-                                                    text-foreground group-hover:text-primary transition-colors">
-                                                    {project.title}
-                                                </h3>
-                                                <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:translate-y-1 transition-all" />
-                                            </div>
-                                            <p className="mt-2 text-muted-foreground text-sm">{project.description}</p>
+                                    <div className="p-3 sm:p-4 md:p-6">
+                                        <div className="flex items-start justify-between">
+                                            <h3 className="text-base sm:text-lg md:text-xl font-semibold text-foreground group-hover:text-primary transition-colors break-words min-w-0">
+                                                {project.title}
+                                            </h3>
+                                            {/* <ArrowUpRight className="w-5 h-5 text-muted-foreground group-hover:text-primary group-hover:translate-x-1 group-hover:translate-y-1 transition-all shrink-0 ml-2" /> */}
                                         </div>
-                                        <div className="flex flex-wrap gap-2 pt-4">
+                                        <p className="mt-2 text-muted-foreground text-xs sm:text-sm break-words">{project.description}</p>
+                                        <div className="flex flex-wrap gap-1.5 pt-4">
                                             {
                                                 project.tag.map((tag, idx) => (
-                                                    <span key={idx} className="px-3 py-1 rounded-full bg-surface text-xs font-medium border border-border/50 text-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">{tag}</span>
+                                                    <span key={idx} className="px-2 py-1 rounded-full bg-surface text-xs font-medium border border-border/50 text-foreground hover:border-primary/50 hover:text-primary transition-all duration-300">{tag}</span>
                                                 ))
                                             }
                                         </div>
@@ -139,14 +136,6 @@ const Projects = () => {
                         </div>
                     ))
                 }
-
-                {/* View All CTA
-                <div className="col-span-1 md:col-span-2 flex items-center justify-center p-6 animate-fade-in animation-delay-600">
-                    <Button className="glass rounded-2xl p-6 animate-fade-in">
-                        View All Projects
-                        <ArrowUpRight className="w-5 h-5 text-primary-foreground" />
-                    </Button>
-                </div> */}
             </div>
         </div>
     </section>
