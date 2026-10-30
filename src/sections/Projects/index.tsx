@@ -12,37 +12,37 @@ type projectType = {
 const projects: Array<projectType> = [
     {
         title: "Test Data Generation",
-        description: "A tool helps to generate test data fast and correctly, adapt data types, formats and bussiness logics. Support to save data directly into database (PostgreSQl, MongoDB) or file (CSV).",
+        description: "A tool helps to generate test data fast and correctly, adapt data types, formats and bussiness logics. Support to save data directly into database (PostgreSQl, MongoDB).",
         image: "https://images.unsplash.com/photo-1757466762489-52fea38071ad?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-        tag: ["Data generation", "Automation", "Python", "Pandas", "Numpy", "PostgreSQL", "MongoDB", "Git", "Github"],
+        tag: ["Python", "Pandas", "Numpy", "PostgreSQL", "MongoDB", "Git"],
         github: "https://github.com/pannguyen2001/gen_data_tool"
     },
     {
         title: "API Testing Framework",
-        description: "An API automation testing framework that validates a real backend (request/response cycles, status codes, headers and JSON payloads). It is built to be easy to extend: adding a new endpoint or a new test case is a small, localized change.",
+        description: "An automation testing framework that handles hundred of API request/responses, as well as catchs and logs issues with clear report and messages.",
         image: "https://plus.unsplash.com/premium_photo-1764702385680-bd5c390f19f1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-        tag: ["Testing", "Automation", "Python", "API", "Data-driven", "Pytest", "Allure", "Git", "Github"],
+        tag: ["Testing", "Automation", "Python", "API", "Data-driven", "Pytest", "Git"],
         github: "https://github.com/pannguyen2001/api_test_cap_prj_v2"
     },
     {
         title: "Data Validation Tool",
         description: "A tool helps to check data quality based on specification and bussiness logics, figure out invalid data early before importing into database. Support to record invalid data into excel file for further analysis.",
         image: "https://images.unsplash.com/photo-1644088379091-d574269d422f?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-        tag: ["Data validation", "Automation", "Python", "Pandas", "Numpy", "Polars", "Git", "Github"],
+        tag: ["Data validation", "Automation", "Python", "Pandas", "Numpy", "Git"],
         github: "https://github.com/pannguyen2001/data_validation"
     },
     {
         title: "UI Testing Framework",
-        description: "A framework for UI testing using Playwright TS, apply POM, data-driven testing, fixture and authentication, integrate with Allure report for effectively testing and debuging.",
+        description: "A framework for UI testing using Playwright TS, apply POM, data-driven testing, integrate with Allure report for effectively testing and debuging.",
         image: "https://images.unsplash.com/photo-1753715613831-9e48eac86813?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-        tag: ["Testing", "Automation", "Playwright", "TS", "Data-driven", "POM", "Allure", "Git", "Github"],
+        tag: ["Testing", "Automation", "Playwright", "TS", "Data-driven", "POM", "Allure", "Git"],
         github: "https://github.com/pannguyen2001/playwright_ts_cap_prj"
     },
     {
-        title: "Capstone project: Finding teacher",
-        description: "MERN stack project with full authentication, seaching, register, judge teacher and management course, student and instructor.",
+        title: "Finding teacher website",
+        description: "MERN stack project with authentication, seaching, registering, judgement and management.",
         image: "https://plus.unsplash.com/premium_photo-1677870728087-2257ce93bfe9?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D",
-        tag: ["MERN", "Frontend development", "Backend development", "Redux-toolkit", "Bulma", "Git", "Github"],
+        tag: ["MERN", "Redux-toolkit", "Bulma", "Git"],
         github: "https://github.com/pannguyen2001/datn-fe"
     }
 ]
@@ -80,7 +80,7 @@ const Projects = () => {
                     Projects that
                     <span className="font-serif italic font-normal text-white">
                         {" "}
-                        make an impact.
+                        make impacts.
                     </span>
                 </h2>
                 <p className="text-muted-foreground animate-fade-in animation-delay-200">

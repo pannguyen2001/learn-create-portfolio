@@ -10,23 +10,28 @@ type highlightType = {
 const highlights: Array<highlightType> = [
     {
         icon: Code2,
-        title: "Automation testing",
-        description: "Build, extend and maitain testing framework adapt to your needs."
-    },
-    {
-        icon: Rocket,
-        title: "Fast development",
-        description: "Design and build automation performance testing system."
-    },
-    {
-        icon: User,
-        title: "Teamwork",
-        description: "Collaborate to teamates effeciency."
+        title: "Automation Testing",
+        description:
+            "Develop and maintain reusable UI and API automation frameworks using Python, Playwright, Pytest and Robot Framework."
     },
     {
         icon: Lightbulb,
-        title: "Ready",
-        description: "Learn new technologies and share knowledge."
+        title: "Data Quality",
+        description:
+            "Build validation tools to identify missing, invalid and inconsistent data across migration and processing workflows."
+    },
+    {
+        icon: Rocket,
+        title: "Collboration",
+        description:
+            "Collaborate effectively with teamates and depelopers to finding software issues and builing solutions."
+    },
+    
+    {
+        icon: User,
+        title: "Continuous Growth",
+        description:
+            "Learning and sharing useful knowledge to improve software automation and data engineering."
     }
 ]
 
@@ -63,18 +68,19 @@ const About = () => {
                         Sofware and data,
                         <span className="font-serif italic font-normal text-white">
                             {" "}
-                            make them work correctly.
+                            make them work as expected.
                         </span>
                     </h2>
 
                     <div className="space-y-4 text-foreground animate-fade-in animation-delay-200 mt-10">
-                        <p><span className="font-bold">Current Focus:</span> Scaling automation frameworks and optimizing data pipelines.</p>
+                        <p><span className="font-bold">Primarily work:</span> Python as first language and JavaScript/TypeScript as second language. Using tools such as Pytest, Playwright and Robot Framework to develop and maintain automated testing solutions.</p>
+                        <p><span className="font-bold">Current Focus:</span> Building maintainable automation frameworks and learning data engineering.</p>
+                        <p><span className="font-bold">Interests:</span> Building automation tools and solving data-processing problems. My personal projects explore test data generation and automated data validation, help to reduce data preparation time and alert data quality issues soon.</p>
                         <p><span className="font-bold">Transitioning to:</span> SDET & Data Engineering roles.</p>
-                        <p><span className="font-bold">Interests:</span> Automation testing, data processing, system design and workflow orchestration.</p>
                     </div>
 
                     <div className="glass rounded-2xl p-6 mt-10 animate-fade-in animation-delay-300 glow-border bg-muted">
-                        <p className="text-lg font-medium text-foregroundn italic">"I specialize in building Reliable Test Automation Systems and Scalabe Data Pipelines, focusing on high-performance processing and resilient architecture."</p>
+                        <p className="text-lg font-medium text-foregroundn italic">"I believe a good engineering is not just writing test scripts only. It requires application architecture and business rules undestanding, preventing failure and giving effective solutions."</p>
                     </div>
                 </div>
 
