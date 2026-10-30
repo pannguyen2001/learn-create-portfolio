@@ -99,15 +99,15 @@ const Hero = () => {
                     {/* Headline */}
                     <div className="space-y-4">
                         <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight animate-fade-in">
-                            Ensure <span className="text-primary glow-text">everything</span>
+                        Engineering <span className="text-primary glow-text">Quality</span>
                             <br />
-                            <span className="block">working</span>
+                            <span className="block">Through</span>
                             <span className="font-serif italic font-normal text-white block">
-                                smoothly.
+                            Automation & Data. 
                             </span>
                         </h1>
                         <p className="text-lg text-muted-foreground max-w-lg mx-auto lg:mx-0">
-                            Hi, I'm Pham Anh Nhat - a detail-oriented Quality Assurance Engineer with over 2 years of professional experience. I am located in DaNang, VietNam.
+                        Hi, I'm Pham Anh Nhat - QA Automation Engineer with 2+ years of experience in API & UI testing, data migration and validation. I build automation frameworks using Python, JS/TS, Playwright, Pytest and Robot Framework to ensure software working correctly and prevent issues soon.
                         </p>
                     </div>
 
@@ -117,7 +117,12 @@ const Hero = () => {
                             <a href="#contact">Contact me </a>
                             <ArrowRight className="w-5 h-5" />
                         </Button>
-                        <Button size="lg" className="bg-secondary text-foreground hover:bg-secondary/90">Download CV <Download className="w-5 h-5" /></Button>
+                        <Button size="lg" className="bg-secondary text-foreground hover:bg-secondary/90">
+                            <a href="https://drive.google.com/file/d/1DXlmOFGbqyrp8u1WiPf1rtJcNu53fkAO/view?usp=drive_link">
+                                Download CV
+                            </a>
+                            <Download className="w-5 h-5" />
+                        </Button>
                     </div>
 
                     {/* Social link */}

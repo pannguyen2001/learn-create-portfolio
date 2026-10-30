@@ -74,7 +74,7 @@ const Experience = () => {
                 </h2>
 
                 <p className="text-muted-foreground animate-fade-in anumation-delay-200">
-                    A timeline of my career journey, highlighting key roles and responsibilities, from curious beginner to professional.
+                    A timeline of my career journey, highlighting key roles and responsibilities.
                 </p>
 
             </div>
